@@ -1,16 +1,17 @@
 * {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-background-color: #24252A;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+/* Navbar */
+
 li, a, button {
-font-family: Arial, Helvetica, sans-serif;
-font-weight: 500;
-font-size: 16px;
-color: whitesmoke;
-text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: whitesmoke;
+    text-decoration: none;
 }
 
 header {
@@ -18,6 +19,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
+    background-color: grey;
 }
 
 .logo {
@@ -40,7 +42,7 @@ header {
 }
 
 .nav_links li a:hover{
- color: skyblue;
+    color: skyblue;
 }
 
 button {
@@ -54,4 +56,76 @@ button {
 
 button:hover {
     background-color: rgba(0,136, 169, 0.8);
+}
+
+/* First Block */
+
+.flex-container {
+    display: flex;
+    flex: auto;
+    background-color: rgb(80, 80, 255);
+    justify-content: space-between;
+}
+.flex-container .container-left {
+    display: flex;
+    height: 300px;
+    width: 500px;
+    padding-left: 100px;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+    color: antiquewhite;
+}
+
+.flex-container .container-right{
+    display: flex;
+    width: 500px;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.flex-container .container-right img{
+    height: 300px;
+    padding: 25px;
+}
+/* Next Section */
+
+.flex-container-2 {
+    flex-direction: row;
+    background-color: lightgrey;
+    flex: auto;
+}
+
+.flex-container-2 h1 {
+    padding: 50px;
+    text-align: center;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.text-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.box {
+    background-color: white;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 15px;
+    height: 200px;
+    width: 200px;
+}
+.texty {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: purple;
+    width: 200px;
+    text-align: center;
+    min-height: 100px;
 }
